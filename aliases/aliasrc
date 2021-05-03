@@ -6,3 +6,4 @@ alias zprofile='$EDITOR $HOME/.zprofile'
 alias zshenv='$EDITOR $HOME/.zshenv'
 
 alias xresources='$EDITOR $HOME/.Xresources'
+alias reload_xresourcers='xrdb ~/.Xresources'

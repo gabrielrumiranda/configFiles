@@ -21,11 +21,14 @@ export PATH="$HOME/.rustup/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 export ANDROID_HOME=$HOME/Android/Sdk
 export GEM_HOME="$HOME/gems"
+export PATH=$HOME/.config/rofi/bin:$PATH
+
 ### Added by Zplugin's installer
 
 source "$HOME/.zplugin/bin/zplugin.zsh"
 zplugin light zdharma/fast-syntax-highlighting
 zplugin light zsh-users/zsh-autosuggestions
+zplugin light zsh-users/zsh-completions
 autoload -Uz _zplugin
 (( ${+_comps} )) && _comps[zplugin]=_zplugin
 ### End of Zplugin installer's chunk

@@ -1,0 +1,69 @@
+################
+!URXVT settings
+################
+
+URxvt*transparent: true
+URxvt*shading: 15
+
+URxvt*saveLines: 12000
+
+
+URxvt.depth:                32
+URxvt.geometry:             90x30
+URxvt.loginShell:           true
+URxvt.internalBorder:       3
+URxvt.lineSpace:            0
+URxvt*scrollBar: false
+
+##############
+!Extensions
+##############
+URxvt.perl-ext-common: keyboard-select,font-size,default,
+!tabbedex
+URxvt.url-launcher: /usr/bin/google-chrome-stable
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.C-Up:     font-size:increase
+URxvt.keysym.C-Down:   font-size:decrease
+URxvt.keysym.C-S-Up:   font-size:incglobal
+URxvt.keysym.C-S-Down: font-size:decglobal
+URxvt.keysym.C-equal:  font-size:reset
+URxvt.keysym.C-slash:  font-size:show
+
+!URxvt.keysym.S-Right:	perl:tabbedex:next_tab
+!URxvt.keysym.S-Left:	perl:tabbedex:prev_tab
+!URxvt.keysym.C-t: perl:tabbedex:new_tab
+!URxvt.keysym.C-S-Left: perl:tabbedex:move_tab_left
+!URxvt.keysym.C-S-Right: perl:tabbedex:move_tab_right
+
+!URxvt.tabbedex.tabbar-fg: 8
+!URxvt.tabbedex.tabbar-bg: 12
+!URxvt.tabbedex.tab-fg: 4
+!URxvt.tabbedex.tab-bg: 0
+
+#############
+
+*background:   [97]#282a36
+*foreground:   #eff0eb
+*cursorColor:  #9aedfe
+
+*color0:      #33303b
+*color8:      #4f4b58
+*color1:      #ff5c57
+*color9:      #ff5c57
+*color2:      #5af78e
+*color10:     #5af78e
+*color3:      #f3f99d
+*color11:     #f3f99d
+*color4:      #57c7ff
+*color12:     #57c7ff
+*color5:      #ff6ac1
+*color13:     #ff6ac1
+*color6:      #9aedfe
+*color14:     #9aedfe
+*color7:      #eff0eb
+*color15:     #eff0eb
+
+URxvt.font: xft:MesloLGS NF:size=11
+
+
+
