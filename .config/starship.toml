@@ -1,0 +1,131 @@
+
+format = """
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$line_break\
+$character\
+
+"""
+
+#[battery]
+#full_symbol = "🔋"
+#charging_symbol = "⚡️"
+#discharging_symbol = "💀"
+
+#[[battery.display]]
+#threshold = 10
+#style = "bold red"
+
+#[[battery.display]]
+#threshold = 60
+#style = "bold yellow"
+
+#[[battery.display]]
+#threshold = 100
+#style = "bold green"
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+
+[cmd_duration]
+min_time = 500
+format = "[$duration]($style) "
+[directory]
+truncation_length = 6
+truncate_to_repo = true
+style = "bold cyan"
+disabled = false
+
+[git_branch]
+# symbol = "🌱 "
+truncation_length = 8
+truncation_symbol = "..."
+style = "bold purple"
+disabled = false
+
+[git_commit]
+commit_hash_length = 4
+tag_symbol = "🔖 "
+
+[git_state]
+cherry_pick = "[🍒 PICKING](bold red)"
+rebase = "REBASING"
+merge = "MERGING"
+revert = "REVERTING"
+bisect = "BISECTING"
+am = "AM"
+am_or_rebase = "AM/REBASE"
+style = "bold yellow"
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
+disabled = false
+
+[git_status]
+conflicted = "🏳"
+diverged = "😵"
+untracked = "🤷‍"
+stashed = "📦"
+modified = "📝"
+staged = '[++\($count\)](green)'
+renamed = "👅"
+deleted = "🗑"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+
+[hostname]
+ssh_only = true
+format =  "on [$hostname](bold red) "
+trim_at = ".companyname.com"
+disabled = false
+
+# [jobs]
+# symbol = "+ "
+# threshold = 1
+
+[line_break]
+disabled = false
+
+# [memory_usage]
+# disabled = false
+# show_percentage = true
+# show_swap = false
+# threshold = -1
+# symbol = " "
+# separator = "/"
+# style = "bold dimmed white"
+
+[nodejs]
+symbol = "⬢ "
+style = "bold green"
+disabled = false
+
+# [package]
+# symbol = "📦 "
+# style = "bold red"
+# disabled = false
+
+[python]
+symbol = "🐍 "
+pyenv_version_name = false
+pyenv_prefix = "pyenv"
+style = "bold yellow"
+disabled = false
+
+[time]
+format = "🕙%T"
+style_root = "bold red"
+style_user = "bold yellow"
+show_always = true
+disabled = false
+
+[username]
+style_user = "white bold"
+style_root = "black bold"
+format = "🧙‍♂️[$user]($style) "
+disabled = false
+show_always = true
+
+

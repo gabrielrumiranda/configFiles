@@ -1,7 +1,3 @@
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 export ZSH="/home/gabriel/.oh-my-zsh"
 export EDITOR='vim'
 DISABLE_AUTO_UPDATE="true"
@@ -36,9 +32,9 @@ autoload -Uz _zplugin
 
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+eval "$(starship init zsh)"
 
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+# source ~/powerlevel10k/powerlevel10k.zsh-theme
 source $HOME/.config/zsh/plugins/completion.zsh
 source $HOME/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/.config/zsh/plugins/history_search.zsh
@@ -47,4 +43,7 @@ source $ZSH/oh-my-zsh.sh
 source ~/.rvm/scripts/rvm
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+eval "$(starship init zsh)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
