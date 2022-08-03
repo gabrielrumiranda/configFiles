@@ -4,5 +4,5 @@ alias aliasrc='$EDITOR $HOME/aliases/aliasrc'
 alias zshrc='$EDITOR $HOME/.zshrc'
 alias zprofile='$EDITOR $HOME/.zprofile'
 alias zshenv='$EDITOR $HOME/.zshenv'
-
+alias update='sudo apt update && sudo apt upgrade -y && sudo apt clean && sudo apt autoclean && sudo apt autoremove -y'
 alias icat="kitty +kitten icat"
